@@ -2,7 +2,7 @@
 
 A privacy-conscious PowerShell audit that turns local Windows health signals into a structured review plan without changing the system.
 
-This repository is a deliberately narrow, public showcase extracted from a much broader private operations package. The public version demonstrates evidence collection, failure isolation, privacy-by-default output, and bounded decision support. It does **not** install software, apply updates, change security policy, edit the registry, modify firewall or network settings, terminate processes, or perform remediation.
+The project demonstrates evidence collection, failure isolation, privacy-by-default output, and bounded decision support. It does **not** install software, apply updates, change security policy, edit the registry, modify firewall or network settings, terminate processes, or perform remediation.
 
 ## What it produces
 
@@ -48,7 +48,7 @@ The implementation has four enforced constraints:
 
 The CI policy parses every PowerShell file and rejects command families associated with installation, updates, execution-policy changes, firewall or network changes, service control, file mutation, remote execution, and download-and-execute behavior.
 
-See [the safety model](docs/safety-model.md) and [sanitization scope](docs/sanitization-scope.md) for the complete boundary.
+See [the safety model](docs/safety-model.md) for the complete boundary.
 
 ## Privacy model
 

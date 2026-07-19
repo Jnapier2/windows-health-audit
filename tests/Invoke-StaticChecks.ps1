@@ -12,10 +12,6 @@ $powerShellFiles = @(Get-ChildItem -LiteralPath $repositoryRoot -Recurse -File |
 } | Sort-Object FullName)
 $failures = [System.Collections.ArrayList]::new()
 
-if (@($powerShellFiles | Where-Object { $powerShellExtensions -notcontains $_.Extension.ToLowerInvariant() }).Count -gt 0) {
-    [void]$failures.Add('PowerShell file selection included an unexpected extension.')
-}
-
 $forbiddenCommands = @(
     'Add-AppxPackage',
     'Add-MpPreference',
@@ -96,9 +92,6 @@ $sourceRoot = Join-Path $repositoryRoot 'src'
 $sourceFiles = @(Get-ChildItem -LiteralPath $sourceRoot -Recurse -File | Where-Object {
     $powerShellExtensions -contains $_.Extension.ToLowerInvariant()
 })
-if (@($sourceFiles | Where-Object { $powerShellExtensions -notcontains $_.Extension.ToLowerInvariant() }).Count -gt 0) {
-    [void]$failures.Add('Source file selection included an unexpected extension.')
-}
 $sourceText = @($sourceFiles | ForEach-Object {
     Get-Content -LiteralPath $_.FullName -Raw
 }) -join "`n"
