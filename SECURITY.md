@@ -2,7 +2,7 @@
 
 ## Supported scope
 
-The current default branch is the only supported showcase version.
+Security fixes target the current default branch.
 
 ## Reporting a vulnerability
 

@@ -1,5 +1,7 @@
 # Windows Health Audit
 
+[![PowerShell checks](https://github.com/Jnapier2/windows-health-audit/actions/workflows/powershell-static.yml/badge.svg)](https://github.com/Jnapier2/windows-health-audit/actions/workflows/powershell-static.yml)
+
 A privacy-conscious PowerShell audit that turns local Windows health signals into a structured review plan without changing the system.
 
 The project demonstrates evidence collection, failure isolation, privacy-by-default output, and bounded decision support. It does **not** install software, apply updates, change security policy, edit the registry, modify firewall or network settings, terminate processes, or perform remediation.
@@ -93,8 +95,8 @@ The check validates PowerShell syntax, the no-remediation command policy, the no
 - Event and reliability data are intentionally aggregated; root-cause work still requires a scoped expert review.
 - Threshold findings are prompts for human review, not proof that a system is unhealthy.
 
-## Project status and license
+## License
 
-This repository is maintained as a portfolio showcase. It is source-available for review but is not open source. See [LICENSE.md](LICENSE.md).
+This project is source-available for evaluation and is not open source. See [LICENSE.md](LICENSE.md).
 
 Copyright (c) 2026 Gateway Information Group LLC. All rights reserved.

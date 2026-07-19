@@ -30,7 +30,7 @@ The project is an observer. It may read local health signals and return an in-me
 The repository contains two layers of enforcement:
 
 1. Human-reviewable source with no dynamic command construction or hidden control path.
-2. CI that parses the PowerShell AST and rejects a conservative list of mutating, administrative, remote, and download commands. CI also rejects elevation directives, execution-policy bypass flags, encoded commands, download APIs, and embedded web URLs in public source.
+2. CI that parses the PowerShell AST and rejects a conservative list of mutating, administrative, remote, and download commands. CI also rejects elevation directives, execution-policy bypass flags, encoded commands, download APIs, and embedded web URLs in tracked source.
 
 Static checks reduce risk but do not replace review. Any future feature that crosses the observer boundary must be built in a different repository and may not be added here.
 

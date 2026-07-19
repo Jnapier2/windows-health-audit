@@ -8,7 +8,7 @@ Windows Health Audit is organized as a one-way evidence pipeline. It deliberatel
 
 Nine collectors query local Windows or .NET data sources:
 
-| Collector | Source | Public output |
+| Collector | Source | Returned output |
 |---|---|---|
 | Operating system | `Win32_OperatingSystem` | Version, build, architecture, boot time, uptime |
 | Memory | `Win32_OperatingSystem`, `Win32_ComputerSystem` | Total and available capacity |
