@@ -1,0 +1,17 @@
+# Local audit output
+reports/
+output/
+*.local.json
+*.private.json
+
+# PowerShell and editor artifacts
+*.clixml
+*.log
+*.tmp
+.vscode/
+.idea/
+
+# Operating-system metadata
+Thumbs.db
+Desktop.ini
+.DS_Store

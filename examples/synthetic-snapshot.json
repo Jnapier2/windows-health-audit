@@ -1,0 +1,109 @@
+{
+  "SchemaVersion": "1.0",
+  "GeneratedAtUtc": "2026-01-15T14:30:00.0000000Z",
+  "Safety": {
+    "ReadOnly": true,
+    "RequiresElevation": false,
+    "PerformsNetworkCalls": false,
+    "PerformsRemediation": false,
+    "IncludesHostOrUserName": false,
+    "IncludesNetworkAddresses": false,
+    "IncludesRawEventMessages": false
+  },
+  "Summary": {
+    "CollectorsSucceeded": 9,
+    "CollectorsUnavailable": 0,
+    "AttentionFindings": 0,
+    "ReviewFindings": 1
+  },
+  "OperatingSystem": {
+    "Available": true,
+    "Caption": "Microsoft Windows 11 Pro",
+    "Version": "10.0.26100",
+    "BuildNumber": "26100",
+    "Architecture": "64-bit",
+    "LastBootUtc": "2026-01-05T12:00:00.0000000Z",
+    "UptimeDays": 10.1
+  },
+  "Memory": {
+    "Available": true,
+    "TotalBytes": 34359738368,
+    "AvailableBytes": 17179869184,
+    "AvailablePercent": 50.0
+  },
+  "FixedVolumes": {
+    "Available": true,
+    "Count": 1,
+    "Volumes": [
+      {
+        "Volume": "fixed-1",
+        "SizeBytes": 1024209543168,
+        "FreeBytes": 184357717196,
+        "FreePercent": 18.0
+      }
+    ]
+  },
+  "Network": {
+    "Available": true,
+    "InterfaceCount": 3,
+    "UpInterfaceCount": 1,
+    "HasDefaultGateway": true
+  },
+  "MicrosoftDefender": {
+    "Available": true,
+    "AntivirusEnabled": true,
+    "AntispywareEnabled": true,
+    "RealTimeProtectionEnabled": true,
+    "AntivirusSignatureAgeDays": 0
+  },
+  "SecurityProducts": {
+    "Available": true,
+    "ProductCount": 1,
+    "ProductNames": [
+      "Microsoft Defender Antivirus"
+    ]
+  },
+  "InstalledUpdates": {
+    "Available": true,
+    "RecordedUpdateCount": 14,
+    "LatestInstalledOn": "2026-01-13"
+  },
+  "SystemErrors": {
+    "Available": true,
+    "LookbackDays": 7,
+    "ErrorCountObserved": 2,
+    "ReachedInspectionCap": false,
+    "TopProviders": [
+      {
+        "Provider": "Synthetic.Storage.Provider",
+        "Count": 2
+      }
+    ]
+  },
+  "Reliability": {
+    "Available": true,
+    "MetricCount": 20,
+    "LatestIndex": 8.8,
+    "Average30DayIndex": 8.5
+  },
+  "Findings": [
+    {
+      "Level": "review",
+      "Category": "storage",
+      "Title": "Free space should be reviewed",
+      "Evidence": "fixed-1 has 18% free space.",
+      "SuggestedReview": "Review capacity trends and decide whether additional space is needed."
+    }
+  ],
+  "CollectorStatus": [
+    { "Name": "operating-system", "State": "collected", "ErrorType": null },
+    { "Name": "memory", "State": "collected", "ErrorType": null },
+    { "Name": "fixed-volumes", "State": "collected", "ErrorType": null },
+    { "Name": "network-summary", "State": "collected", "ErrorType": null },
+    { "Name": "microsoft-defender", "State": "collected", "ErrorType": null },
+    { "Name": "security-products", "State": "collected", "ErrorType": null },
+    { "Name": "installed-update-summary", "State": "collected", "ErrorType": null },
+    { "Name": "system-error-summary", "State": "collected", "ErrorType": null },
+    { "Name": "reliability-index", "State": "collected", "ErrorType": null }
+  ]
+}
