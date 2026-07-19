@@ -2,9 +2,9 @@
 
 [![PowerShell checks](https://github.com/Jnapier2/windows-health-audit/actions/workflows/powershell-static.yml/badge.svg)](https://github.com/Jnapier2/windows-health-audit/actions/workflows/powershell-static.yml)
 
-A privacy-conscious PowerShell audit that turns local Windows health signals into a structured review plan without changing the system.
+Windows Health Audit gives support teams a low-risk way to establish a consistent endpoint-health baseline before deeper troubleshooting. It converts local Windows signals into a structured, privacy-preserving review plan without elevation, network access, file writes, or system changes.
 
-Failure-isolated collectors produce privacy-preserving evidence and bounded review guidance. The audit does **not** install software, apply updates, change security policy, edit the registry, modify firewall or network settings, terminate processes, or perform remediation.
+Failure-isolated collectors keep the rest of the audit usable when a Windows feature is unavailable. The result supports consistent review and controlled handoff; it does **not** install software, apply updates, change security policy, edit the registry, modify firewall or network settings, terminate processes, or perform remediation.
 
 ## What it produces
 
