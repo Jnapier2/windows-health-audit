@@ -6,6 +6,8 @@ Windows Health Audit gives support teams a low-risk way to establish a consisten
 
 Failure-isolated collectors keep the rest of the audit usable when a Windows feature is unavailable. The result supports consistent review and controlled handoff; it does **not** install software, apply updates, change security policy, edit the registry, modify firewall or network settings, terminate processes, or perform remediation.
 
+An unavailable collector is treated as missing evidence, not as proof of endpoint failure. That distinction keeps partial snapshots useful while preventing unsupported Windows features from producing misleading health conclusions.
+
 ## What it produces
 
 `Get-WindowsHealthSnapshot.ps1` returns one PowerShell object containing:
@@ -36,6 +38,8 @@ To reduce or expand the bounded Event Log review:
 ```powershell
 & .\src\Get-WindowsHealthSnapshot.ps1 -EventLookbackDays 3 -MaxSystemErrors 50
 ```
+
+These two validated parameters form the bounded collection surface: the lookback controls history, and the record cap limits how many System errors are inspected.
 
 The script writes nothing. If a persistent report is needed, the caller chooses the destination and retention policy.
 
