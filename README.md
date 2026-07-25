@@ -2,6 +2,8 @@
 
 [![PowerShell checks](https://github.com/Jnapier2/windows-health-audit/actions/workflows/powershell-static.yml/badge.svg)](https://github.com/Jnapier2/windows-health-audit/actions/workflows/powershell-static.yml)
 
+[Portfolio](https://jerry-napier-portfolio.netlify.app/) · [GitHub profile](https://github.com/Jnapier2)
+
 Windows Health Audit gives support teams a low-risk way to establish a consistent endpoint-health baseline before deeper troubleshooting. It converts local Windows signals into a structured, privacy-preserving review plan without elevation, network access, file writes, or system changes.
 
 Failure-isolated collectors keep the rest of the audit usable when a Windows feature is unavailable. The result supports consistent review and controlled handoff; it does **not** install software, apply updates, change security policy, edit the registry, modify firewall or network settings, terminate processes, or perform remediation.
@@ -103,4 +105,4 @@ The check validates PowerShell syntax, the no-remediation command policy, the no
 
 This project is source-available for evaluation and is not open source. See [LICENSE.md](LICENSE.md).
 
-Copyright (c) 2026 Gateway Information Group LLC. All rights reserved.
+Copyright © 2026 Gateway Information Group LLC. All rights reserved.
