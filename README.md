@@ -92,7 +92,7 @@ Run the same parse and policy checks used in CI:
 .\tests\Invoke-StaticChecks.ps1
 ```
 
-The check validates PowerShell syntax, the no-remediation command policy, the no-elevation/no-download source policy, and the synthetic JSON sample. CI runs on `windows-latest` with `actions/checkout@v6`.
+The check validates PowerShell syntax, the no-remediation command policy, the no-elevation/no-download source policy, and the synthetic JSON sample. CI runs on `windows-latest` with checkout pinned to the reviewed immutable commit recorded in the workflow.
 
 ## Limitations
 
